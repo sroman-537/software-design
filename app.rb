@@ -18,6 +18,5 @@ rsvps_table = DB.from(:rsvps)
 get "/" do 
     puts events_table.all
     @events = events_table.all
-    
     view "events"
 end 
