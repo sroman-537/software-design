@@ -25,3 +25,8 @@ get "/events/:id" do
     @event = events_table.where(id: params[:id]).first
     view "event"
 end
+
+get "/events/:id/rsvps/new" do
+    @event = events_table.where(id: params[:id]).first
+    view "new_rsvp"
+end
